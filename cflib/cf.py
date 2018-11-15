@@ -625,7 +625,7 @@ class CFWriter():
             for ln in tf.header:
                 hLn = ln
             self.indM.append(
-                vcf.get_indiv_from_field_header(hLn.decode("utf-8")))
+                vcf.get_indiv_from_field_header(hLn))
 
     def __init_nIndL(self):
         """Count individuals in each vcf file."""
